@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-corner {
+  position: fixed; /* Position the element relative to the browser window */
+  top: 20px; /* Distance from the top of the window */
+  left: 20px; /* Distance from the left side of the window */
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+
+.registration-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'] {
+  width: calc(100% - 20px); /* Adjust the width to fit within the container */
+  /* Subtracting 20px to accommodate for padding and borders */
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+}
+
+input[type='email'].error {
+  border-color: red;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+.submitted-message {
+  margin-top: 20px;
+}
+
+.success-journey {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center; /* Add this line to center the text */
+}
+
